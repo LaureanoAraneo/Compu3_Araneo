@@ -1,2 +1,5 @@
 # TP1 Curriculum Vitae- Araneo Laureano
-La verdad me hubiera gustado hacer algo mejor, mas diseñado y mejor ordenando. Aun asi, estoy conforme con lo que logre hacer sin saber nada de VSC ni HTML5.
+Trabajo practico en el cual se realizo un "Curriculum Vitae" armado en VSC con el fin de practicar y reforzar los conocimientos adquiridos en clases, estos siendo HTML5, CSS y la propiedad Flexbox. 
+## Información Técnica: 
+* Editor de código: VSC (Visual Studio Code)
+* Tamaño de pantalla: 1920x1080
