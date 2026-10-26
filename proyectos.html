@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Portfolio - Diseños y Sombras</title>
+    <link rel="stylesheet" href="estilos.css" />
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <a href="index.html">Inicio</a>
+            <a href="proyectos.html">Proyectos</a>
+            <a href="sobre_mi.html">Sobre mi</a>
+        </nav>
+    </header>
+    <main>
+        <!-- Titulo -->
+        <section class="titulo">
+            <h1>Proyectos</h1>
+        </section>
+        <!-- Proyectos -->
+        <section class="proyectos">
+            <article class="proyecto1">
+                <div class="proyecto_carrusel">
+                    <img src="img/1.jpg" alt="Proyecto 1" />
+                </div>
+                <div class="proyecto_info">
+                    <h2>MENU BAR</h2>
+                    <p>Menu para el bar "PICADURA", lugar ficticio realizado apra la materia Espacio Tipográfico II de
+                        la Universidad Nacional de Lanus (UNLA).</p>
+                    <h3>Datos:</h3>
+                    <p>Año - 2026</p>
+                    <p>Cátedra - NAtalia Acosta</p>
+                    <p>Turno - Tarde</p>
+                </div>
+            </article>
+            <article class="proyecto2">
+                <div class="proyecto_video">
+                    <video src="" alt="Proyecto 2" />
+                </div>
+                <div class="proyecto_info">
+                    <h2>ANIMACIÓN</h2>
+                    <p>Animación stop motion realizado para Espacio Tipográfico I en base a TP de composiciones y
+                        tipografías.</p>
+                    <h3>Datos:</h3>
+                    <p>Año - 2026</p>
+                    <p>Cátedra - NAtalia Acosta</p>
+                    <p>Turno - Tarde</p>
+                </div>
+            </article>
+        </section>
+        <!-- Formulario -->
+        <section class="formulario">
+            <div class="Planteamiento">
+                <h4>¿Tenes un proyecto?</h4>
+                <p>Llena el formulario con tu idea y datos, nosotros nos contactamos con vos y te ayudamos a crear ese
+                    proyecto que tanto pensaste.</p>
+            </div>
+            <div class="formulario_datos">
+                <form method="post" action="" target="_blank" enctype="text/plain">
+                    <input type="text" id="nombre y apellido" name="nombre y apellido" placeholder="Nombre / Apellido" required />
+                    <input type="text" id="telefono" name="telefono" placeholder="Telefono" required />
+                    <input type="email" id="email" name="email" placeholder="Email" required />
+                    <select id="tipo de proyecto" name="tipo de proyecto" required>
+                        <option value="" disabled selected>Tipo de proyecto</option>
+                        <option value="proyecto animación">Proyecto Animación</option>
+                        <option value="proyecto audiovisual">Proyecto Audiovisual</option>
+                        <option value="proyecto visual">Proyecto Visual</option>
+                        <option value="proyecto editorial">Proyecto Editorial</option>
+                        <option value="otro">Otros</option>
+                    </select>
+                    <textarea id="mensaje" name="mensaje" rows="4" placeholder="Tu idea..." required></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="contacto">
+            <img src="img/tiktok.png" alt="TikTok" class="" height="26" width="26" />
+            <p>Diseños_y_Sombras</p>
+        </div>
+        <div class="contacto">
+            <img src="img/facebook.png" alt="Facebook" class="" height="26" width="26" />
+            <p>Diseños_y_Sombras</p>
+        </div>
+        <div class="contacto">
+            <img src="img/instagram.png" alt="Instagram" class="" height="26" width="26" />
+            <p>Diseños_y_Sombras</p>
+        </div>
+        <div class="contacto">
+            <img src="img/email.png" alt="Email" class="" height="26" width="26" />
+            <p>DiseñosySombras@gmail.com</p>
+        </div>
+    </footer>
+</body>
+
+</html>
