@@ -22,56 +22,66 @@
         </section>
         <!-- Proyectos -->
         <section class="proyectos">
-            <article class="proyecto1">
-                <div class="proyecto_carrusel">
-                    <img src="img/1.jpg" alt="Proyecto 1" />
+            <article class="proyecto_1">
+                <div class="muestra">
+                    <img src="img/menu_vista_central.jpg" alt="Doble Pagina" width="1000" height="750" />
+                    <img src="img/menu_tapa_centro.jpg" alt="Tapa y Doble Pagina" width="1000" height="750" />
+                    <img src="img/menu_tapa_contratapa.jpg" alt="Tapa y Contratapa" width="1000" height="750" />
                 </div>
                 <div class="proyecto_info">
                     <h2>MENU BAR</h2>
                     <p>Menu para el bar "PICADURA", lugar ficticio realizado apra la materia Espacio Tipográfico II de
                         la Universidad Nacional de Lanus (UNLA).</p>
                     <h3>Datos:</h3>
-                    <p>Año - 2026</p>
-                    <p>Cátedra - NAtalia Acosta</p>
-                    <p>Turno - Tarde</p>
+                    <ul>
+                        <li>Año - 2026</li>
+                        <li>Cátedra - Natalia Acosta</li>
+                        <li>Turno - Tarde</li>
+                    </ul>
                 </div>
             </article>
-            <article class="proyecto2">
-                <div class="proyecto_video">
-                    <video src="" alt="Proyecto 2" />
-                </div>
+            <article class="proyecto_2">
+                <video class="proyecto_video" src="" alt="Proyecto_2" />
                 <div class="proyecto_info">
                     <h2>ANIMACIÓN</h2>
                     <p>Animación stop motion realizado para Espacio Tipográfico I en base a TP de composiciones y
                         tipografías.</p>
                     <h3>Datos:</h3>
-                    <p>Año - 2026</p>
-                    <p>Cátedra - NAtalia Acosta</p>
-                    <p>Turno - Tarde</p>
+                    <ul>
+                        <li>Año - 2026</li>
+                        <li>Cátedra - Natalia Acosta</li>
+                        <li>Turno - Tarde</li>
+                    </ul>
                 </div>
             </article>
         </section>
         <!-- Formulario -->
         <section class="formulario">
-            <div class="Planteamiento">
+            <div class="planteamiento">
                 <h4>¿Tenes un proyecto?</h4>
                 <p>Llena el formulario con tu idea y datos, nosotros nos contactamos con vos y te ayudamos a crear ese
                     proyecto que tanto pensaste.</p>
             </div>
             <div class="formulario_datos">
                 <form method="post" action="" target="_blank" enctype="text/plain">
-                    <input type="text" id="nombre y apellido" name="nombre y apellido" placeholder="Nombre / Apellido" required />
-                    <input type="text" id="telefono" name="telefono" placeholder="Telefono" required />
+                    <label for="nombre_apellido">Nombre y Apellido:</label>
+                    <input type="text" id="nombre_apellido" name="nombre_apellido" placeholder="Nombre / Apellido"
+                        required />
+                    <label for="telefono">Telefono:</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="Telefono" required />
+                    <label for="email">Email:</label>
                     <input type="email" id="email" name="email" placeholder="Email" required />
+                    <label for="tipo de proyecto">Tipo de proyecto:</label>
                     <select id="tipo de proyecto" name="tipo de proyecto" required>
-                        <option value="" disabled selected>Tipo de proyecto</option>
+                        <option value="">Tipo de proyecto</option>
                         <option value="proyecto animación">Proyecto Animación</option>
                         <option value="proyecto audiovisual">Proyecto Audiovisual</option>
                         <option value="proyecto visual">Proyecto Visual</option>
                         <option value="proyecto editorial">Proyecto Editorial</option>
                         <option value="otro">Otros</option>
                     </select>
-                    <textarea id="mensaje" name="mensaje" rows="4" placeholder="Tu idea..." required></textarea>
+                    <label for="mensaje">Tu idea:</label>
+                    <textarea id="mensaje" name="mensaje" placeholder="Tu idea..."></textarea>
                     <button type="submit">Enviar</button>
                 </form>
             </div>
