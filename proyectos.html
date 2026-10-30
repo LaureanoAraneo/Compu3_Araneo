@@ -24,15 +24,31 @@
         <section class="proyectos">
             <article class="proyecto_1">
                 <div class="muestra">
-                    <img src="img/menu_vista_central.jpg" alt="Doble Pagina" width="1000" height="750" />
-                    <img src="img/menu_tapa_centro.jpg" alt="Tapa y Doble Pagina" width="1000" height="750" />
-                    <img src="img/menu_tapa_contratapa.jpg" alt="Tapa y Contratapa" width="1000" height="750" />
+                    <div class="contenedor_track">
+                        <div class="track">
+                            <a href="img/menu_vista_central.jpg">
+                                <img src="img/menu_vista_central.jpg" alt="Doble Pagina" width="1000" height="750" />
+                            </a>
+                        </div>
+                        <div class="track">
+                            <a href="img/menu_tapa_centro.jpg">
+                                <img src="img/menu_tapa_centro.jpg" alt="Tapa y Doble Pagina" width="1000"
+                                    height="750" />
+                            </a>
+                        </div>
+                        <div class="track">
+                            <a href="img/menu_tapa_contratapa.jpg">
+                                <img src="img/menu_tapa_contratapa.jpg" alt="Tapa y Contratapa" width="1000"
+                                    height="750" />
+                            </a>
+                        </div>
+                    </div>
                 </div>
                 <div class="proyecto_info">
                     <h2>MENU BAR</h2>
                     <p>Menu para el bar "PICADURA", lugar ficticio realizado apra la materia Espacio Tipográfico II de
                         la Universidad Nacional de Lanus (UNLA).</p>
-                    <h3>Datos:</h3>
+                    <h3>DATOS:</h3>
                     <ul>
                         <li>Año - 2026</li>
                         <li>Cátedra - Natalia Acosta</li>
@@ -41,17 +57,25 @@
                 </div>
             </article>
             <article class="proyecto_2">
-                <video class="proyecto_video" src="" alt="Proyecto_2" />
                 <div class="proyecto_info">
                     <h2>ANIMACIÓN</h2>
-                    <p>Animación stop motion realizado para Espacio Tipográfico I en base a TP de composiciones y
+                    <p>Animación stop motion realizada para Espacio Tipográfico I en base a TP de composiciones y
+                        clasificacion
                         tipografías.</p>
-                    <h3>Datos:</h3>
+                    <h3>DATOS:</h3>
                     <ul>
                         <li>Año - 2026</li>
-                        <li>Cátedra - Natalia Acosta</li>
+                        <li>Cátedra - Diana Corvalan</li>
                         <li>Turno - Tarde</li>
                     </ul>
+                </div>
+                <button class="pause_unpause" id="reproductor" aria-label="Boton reproductor">
+                    <img src="img/boton_reproductor.png" alt="Boton de play y pausa">
+                </button>
+                <div class="contenedor_video">
+                    <video autoplay muted loop>
+                        <source src="vid/TP2.mp4" alt="Animacion" type="video/mp4">
+                    </video>
                 </div>
             </article>
         </section>
@@ -82,7 +106,7 @@
                     </select>
                     <label for="mensaje">Tu idea:</label>
                     <textarea id="mensaje" name="mensaje" placeholder="Tu idea..."></textarea>
-                    <button type="submit">Enviar</button>
+                    <button class="enviar" type="submit">Enviar</button>
                 </form>
             </div>
         </section>
@@ -90,19 +114,19 @@
     <footer>
         <div class="contacto">
             <img src="img/tiktok.png" alt="TikTok" class="" height="26" width="26" />
-            <p>Diseños_y_Sombras</p>
+            <p class="footer">Diseños_y_Sombras</p>
         </div>
         <div class="contacto">
             <img src="img/facebook.png" alt="Facebook" class="" height="26" width="26" />
-            <p>Diseños_y_Sombras</p>
+            <p class="footer">Diseños_y_Sombras</p>
         </div>
         <div class="contacto">
             <img src="img/instagram.png" alt="Instagram" class="" height="26" width="26" />
-            <p>Diseños_y_Sombras</p>
+            <p class="footer">Diseños_y_Sombras</p>
         </div>
         <div class="contacto">
             <img src="img/email.png" alt="Email" class="" height="26" width="26" />
-            <p>DiseñosySombras@gmail.com</p>
+            <p class="footer">DiseñosySombras@gmail.com</p>
         </div>
     </footer>
 </body>

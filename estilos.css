@@ -23,6 +23,13 @@
 }
 
 @font-face {
+    font-family: "Manrope semibold";
+    src: url(fonts/Manrope-SemiBold.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: "SpaceGrotesk medium";
     src: url(fonts/SpaceGrotesk-Medium.ttf) format("truetype");
     font-weight: normal;
@@ -52,7 +59,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    width: 1920px;
+    width: 100%;
     height: 60px;
     z-index: 1000;
     box-shadow: 0px 28px 29px rgba(0, 0, 0, 0.12);
@@ -78,7 +85,7 @@ footer {
     box-shadow: 0px 4px 100px rgba(0, 0, 0, 0.25);
     font-family: "SpaceGrotesk regular", serif;
     font-size: 14px;
-    width: 1920px;
+    width: 100%;
     height: 100px;
 }
 
@@ -93,6 +100,17 @@ h1 {
     margin-top: 100px;
 }
 
+h2 {
+    font-family: "spacegrotesk medium";
+    font-size: 56px;
+}
+
+h3 {
+    font-family: "Manrope bold";
+    font-size: 20px;
+    color: black;
+}
+
 h4 {
     font-family: "SpaceGrotesk regular", serif;
     font-size: 64px;
@@ -105,6 +123,21 @@ p {
     font-family: "Manrope regular", serif;
     font-size: 20px;
     color: #FFFFFF;
+}
+
+.footer {
+    color: black;
+}
+
+li {
+    font-family: "Manrope regular", serif;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+button {
+    background: none;
+    border: none;
 }
 
 .informacion {
@@ -153,11 +186,40 @@ p {
 .formulario input {
     width: 100%;
     height: 36px;
-    border: none;
     padding: 10px;
     font-family: "Manrope regular", serif;
     font-size: 16px;
     color: #6C3A8E;
+}
+
+.formulario select {
+    width: 100%;
+    height: 36px;
+    font-family: "Manrope regular", serif;
+    font-size: 16px;
+    color: #6C3A8E;
+}
+
+.formulario textarea {
+    width: 100%;
+    height: 168px;
+    font-family: "Manrope regular", serif;
+    font-size: 16px;
+    color: #6C3A8E;
+}
+
+.enviar {
+    font-family: "manrope semibold", serif;
+    font-size: 26px;
+    color: #FFFFFF;
+    background-color: #6C3A8E;
+    border-radius: 15%
+}
+
+.formulario label {
+    font-family: "manrope regular";
+    font-size: 20px;
+    color: black;
 }
 
 .proyectos {
@@ -187,12 +249,272 @@ p {
     width: 1779px;
     height: 800px;
     align-self: flex-end;
+    gap: 200px;
+}
+
+.proyecto_info {
+    max-width: 430px;
+}
+
+.proyecto_info h2 {
+    margin-bottom: 0px;
+}
+
+.proyecto_info p {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.contenedor_video {
+    overflow: hidden;
+    width: 536px;
+    height: 751px;
+    position: relative;
+}
+
+.contenedor_video video {
+    width: 536;
+    height: 751;
+    position: absolute;
+    left: -69%;
+    object-fit: cover;
+}
+
+.pause_unpause {
+    background: none;
+    border: none;
 }
 
 .carrusel {
     display: flex;
-    flex-direction: column;
+    width: 100%;
+    height: 779px;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     background-color: #E77843;
+    gap: 50px;
+    margin-bottom: 75px;
+}
+
+.muestra {
+    width: 100%;
+    max-width: 1000px;
+    height: 750px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.contenedor_track {
+    display: flex;
+    width: 300%;
+    height: 100%;
+    animation: galeria 15s infinite ease-in-out;
+}
+
+.slider-track:hover {
+    animation-play-state: paused;
+}
+
+.track {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.track img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@keyframes galeria {
+
+    0%,
+    25% {
+        transform: translateX(0);
+    }
+
+    25%,
+    50% {
+        transform: translateX(-33.4%);
+    }
+
+    50%,
+    75% {
+        transform: translateX(-66.8%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.descripcion {
+    max-width: 752px;
+    max-height: 145px;
+    margin-bottom: 10px;
+}
+
+.descripcion h2 {
+    margin-bottom: 15px;
+    font-family: "spacegrotesk medium", serif;
+    font-size: 32px;
+}
+
+.foto {
+    margin: auto;
+    margin-right: 63px;
+}
+
+.contenido {
+    margin: auto;
+    margin-left: 0px;
+}
+
+.grid_container {
+    width: 777px;
+    height: 334px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-row-gap: 30px;
+    justify-content: start;
+    align-items: start;
+}
+
+.grid_interna {
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+.grid_1 .grid_2 .grid_3 .grid_4 {
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    margin: 0 0 4px 0;
+}
+
+ul {
+    margin-top: 0;
+    padding-left: 30px;
+}
+
+p {
+    margin: 0;
+}
+
+/* mobile */
+
+@media screen and (max-width: 600px) {
+
+    /* TÍTULO */
+    .titulo h1 {
+        font-size: 28px;
+        text-align: center;
+        justify-content: center;
+        margin-top: 100px;
+        margin-bottom: 35px;
+        padding: 0 10px;
+    }
+
+    /* GALERÍA */
+    .galeria {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* CARRUSEL */
+    .carrusel {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+
+        width: 100%;
+        height: auto;
+        min-height: 0;
+
+        gap: 0;
+        padding: 8px 0 20px;
+        margin-bottom: 50px;
+        box-sizing: border-box;
+    }
+
+    /* IMAGEN */
+    .carrusel > img {
+        grid-column: 1 / 3;
+        grid-row: 1;
+
+        width: calc(100% - 30px);
+        height: auto;
+        max-width: 100%;
+        margin: 0 auto;
+
+        object-fit: contain;
+    }
+
+    /* BOTÓN ANTERIOR */
+    .carrusel #anterior {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    /* BOTÓN SIGUIENTE */
+    .carrusel #siguiente {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .carrusel button {
+        width: 100%;
+        height: 70px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        padding: 10px;
+    }
+
+    .carrusel button img {
+        width: 35px;
+        height: 35px;
+        object-fit: contain;
+    }
+
+    /* FOOTER */
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+
+        gap: 15px;
+        padding: 20px 15px;
+    }
+
+    .contacto {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .contacto .logo {
+        width: 20px;
+        height: 20px;
+    }
+
+    .contacto p {
+        font-size: 14px;
+    }
+
 }
